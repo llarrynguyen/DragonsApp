@@ -1,0 +1,949 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E3B2B3C2228BB4E5007326FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B2B3C1228BB4E5007326FE /* AppDelegate.swift */; };
+		E3B2B3C9228BB4E6007326FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3B2B3C8228BB4E6007326FE /* Assets.xcassets */; };
+		E3B2B3CC228BB4E6007326FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3B2B3CA228BB4E6007326FE /* LaunchScreen.storyboard */; };
+		E3B2B3ED228BB7B2007326FE /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3B2B3E9228BB7B2007326FE /* Alamofire.framework */; };
+		E3B2B3F2228BB7BF007326FE /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3B2B3EC228BB7B2007326FE /* Nimble.framework */; };
+		E3B2B3F3228BB7D3007326FE /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3B2B3EA228BB7B2007326FE /* Kingfisher.framework */; };
+		E3B2B3F4228BB7D6007326FE /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3B2B3EB228BB7B2007326FE /* Quick.framework */; };
+		E3B2B3F8228BBA4E007326FE /* DragonsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B2B3F7228BBA4E007326FE /* DragonsListView.swift */; };
+		E3B2B3FA228BBA61007326FE /* DragonsListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B2B3F9228BBA61007326FE /* DragonsListPresenter.swift */; };
+		E3B2B3FC228BBA78007326FE /* DragonsListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B2B3FB228BBA78007326FE /* DragonsListService.swift */; };
+		E3B2B3FE228BBA84007326FE /* DragonsListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B2B3FD228BBA84007326FE /* DragonsListRouter.swift */; };
+		E3B2B400228BBABE007326FE /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B2B3FF228BBABE007326FE /* AppRouter.swift */; };
+		E3B2B404228C75AD007326FE /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B2B403228C75AD007326FE /* Network.swift */; };
+		E3B2B407228C75C3007326FE /* NetworkProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B2B406228C75C3007326FE /* NetworkProtocol.swift */; };
+		E3B2B40A228C75E5007326FE /* UrlsApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B2B409228C75E5007326FE /* UrlsApi.swift */; };
+		E3B2B40C228C75F4007326FE /* UrlsApiProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B2B40B228C75F4007326FE /* UrlsApiProtocol.swift */; };
+		E3B2B412228C7935007326FE /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B2B411228C7935007326FE /* UIColorExtension.swift */; };
+		E3B2B414228C7971007326FE /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B2B413228C7971007326FE /* StringExtension.swift */; };
+		E3B2B416228C7989007326FE /* UIFontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B2B415228C7989007326FE /* UIFontExtension.swift */; };
+		E3B2B418228C79B8007326FE /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B2B417228C79B8007326FE /* UIViewExtension.swift */; };
+		E3B2B41A228C7AEE007326FE /* DragonsListProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B2B419228C7AEE007326FE /* DragonsListProtocols.swift */; };
+		E3B2B420228C845E007326FE /* DragonsResponseApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B2B41F228C845E007326FE /* DragonsResponseApi.swift */; };
+		E3B2B422228C8470007326FE /* DragonsApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B2B421228C8470007326FE /* DragonsApi.swift */; };
+		E3B2B424228C8778007326FE /* Dragon.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B2B423228C8778007326FE /* Dragon.swift */; };
+		E3B2B426228CB6B2007326FE /* DragonsListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B2B425228CB6B2007326FE /* DragonsListCell.swift */; };
+		E3B2B42A228CB974007326FE /* Nunito-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E3B2B428228CB974007326FE /* Nunito-Bold.ttf */; };
+		E3B2B42B228CB974007326FE /* Nunito-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E3B2B429228CB974007326FE /* Nunito-Regular.ttf */; };
+		E3B2B42D228CBE77007326FE /* DragonsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B2B42C228CBE77007326FE /* DragonsDetailView.swift */; };
+		E3B2B42F228CBED6007326FE /* DragonsDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B2B42E228CBED6007326FE /* DragonsDetailRouter.swift */; };
+		E3B2B431228CC033007326FE /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B2B430228CC033007326FE /* UIViewControllerExtension.swift */; };
+		E3B2B433228CC092007326FE /* UINavigationControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B2B432228CC092007326FE /* UINavigationControllerExtension.swift */; };
+		E3B2B435228CC34C007326FE /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B2B434228CC34C007326FE /* UIImageExtension.swift */; };
+		E3B2B437228CCD71007326FE /* DragonsDetailProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B2B436228CCD71007326FE /* DragonsDetailProtocols.swift */; };
+		E3B2B439228CCE59007326FE /* DragonsDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B2B438228CCE59007326FE /* DragonsDetailPresenter.swift */; };
+		E3B2B43D228CD295007326FE /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B2B43C228CD295007326FE /* ErrorView.swift */; };
+		E3B2B441228CDCC8007326FE /* AppRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B2B440228CDCC8007326FE /* AppRouterTests.swift */; };
+		E3B2B445228CDD68007326FE /* UIColorExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B2B444228CDD68007326FE /* UIColorExtensionTests.swift */; };
+		E3B2B447228CDE3D007326FE /* StringExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B2B446228CDE3D007326FE /* StringExtensionTests.swift */; };
+		E3B2B449228CE32F007326FE /* UIFontExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B2B448228CE32F007326FE /* UIFontExtensionTests.swift */; };
+		E3B2B44C228CE38D007326FE /* UrlsApiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B2B44B228CE38D007326FE /* UrlsApiTests.swift */; };
+		E3B2B450228CE5AB007326FE /* DragonsDetailPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B2B44F228CE5AB007326FE /* DragonsDetailPresenterTests.swift */; };
+		E3B2B452228CE5B5007326FE /* DragonsDetailRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B2B451228CE5B5007326FE /* DragonsDetailRouterTests.swift */; };
+		E3B2B457228CE64A007326FE /* DragonsDetailRouterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B2B456228CE64A007326FE /* DragonsDetailRouterMock.swift */; };
+		E3B2B459228CE657007326FE /* DragonsDetailPresenterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B2B458228CE657007326FE /* DragonsDetailPresenterMock.swift */; };
+		E3B2B45C228CEA59007326FE /* DragonsListViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B2B45B228CEA59007326FE /* DragonsListViewTests.swift */; };
+		E3B2B45E228CEA65007326FE /* DragonsListServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B2B45D228CEA65007326FE /* DragonsListServiceTests.swift */; };
+		E3B2B460228CEA71007326FE /* DragonsListRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B2B45F228CEA71007326FE /* DragonsListRouterTests.swift */; };
+		E3B2B462228CEABB007326FE /* DragonsListPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B2B461228CEABB007326FE /* DragonsListPresenterTests.swift */; };
+		E3B2B465228CEAEC007326FE /* DragonsListViewMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B2B464228CEAEC007326FE /* DragonsListViewMock.swift */; };
+		E3B2B467228CEAF8007326FE /* DragonsListServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B2B466228CEAF8007326FE /* DragonsListServiceMock.swift */; };
+		E3B2B469228CEB03007326FE /* DragonsListRouterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B2B468228CEB03007326FE /* DragonsListRouterMock.swift */; };
+		E3B2B46B228CEB10007326FE /* DragonsListPresenterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B2B46A228CEB10007326FE /* DragonsListPresenterMock.swift */; };
+		E3B2B46D228CEF38007326FE /* DragonsListRequestMock.json in Resources */ = {isa = PBXBuildFile; fileRef = E3B2B46C228CEF38007326FE /* DragonsListRequestMock.json */; };
+		E3B2B46E228CEFB0007326FE /* DragonsListRequestMock.json in Resources */ = {isa = PBXBuildFile; fileRef = E3B2B46C228CEF38007326FE /* DragonsListRequestMock.json */; };
+		E3B2B470228CF2A8007326FE /* DragonsListNetworkMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B2B46F228CF2A8007326FE /* DragonsListNetworkMock.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E3B2B3D3228BB4E6007326FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E3B2B3B6228BB4E5007326FE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E3B2B3BD228BB4E5007326FE;
+			remoteInfo = Dragons;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E3B2B3BE228BB4E5007326FE /* Dragons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dragons.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3B2B3C1228BB4E5007326FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E3B2B3C8228BB4E6007326FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E3B2B3CB228BB4E6007326FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E3B2B3CD228BB4E6007326FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3B2B3D2228BB4E6007326FE /* DragonsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DragonsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3B2B3D8228BB4E6007326FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3B2B3E9228BB7B2007326FE /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		E3B2B3EA228BB7B2007326FE /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/iOS/Kingfisher.framework; sourceTree = "<group>"; };
+		E3B2B3EB228BB7B2007326FE /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
+		E3B2B3EC228BB7B2007326FE /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
+		E3B2B3F7228BBA4E007326FE /* DragonsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonsListView.swift; sourceTree = "<group>"; };
+		E3B2B3F9228BBA61007326FE /* DragonsListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonsListPresenter.swift; sourceTree = "<group>"; };
+		E3B2B3FB228BBA78007326FE /* DragonsListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonsListService.swift; sourceTree = "<group>"; };
+		E3B2B3FD228BBA84007326FE /* DragonsListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonsListRouter.swift; sourceTree = "<group>"; };
+		E3B2B3FF228BBABE007326FE /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		E3B2B403228C75AD007326FE /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		E3B2B406228C75C3007326FE /* NetworkProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProtocol.swift; sourceTree = "<group>"; };
+		E3B2B409228C75E5007326FE /* UrlsApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlsApi.swift; sourceTree = "<group>"; };
+		E3B2B40B228C75F4007326FE /* UrlsApiProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlsApiProtocol.swift; sourceTree = "<group>"; };
+		E3B2B411228C7935007326FE /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		E3B2B413228C7971007326FE /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		E3B2B415228C7989007326FE /* UIFontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontExtension.swift; sourceTree = "<group>"; };
+		E3B2B417228C79B8007326FE /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		E3B2B419228C7AEE007326FE /* DragonsListProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonsListProtocols.swift; sourceTree = "<group>"; };
+		E3B2B41F228C845E007326FE /* DragonsResponseApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonsResponseApi.swift; sourceTree = "<group>"; };
+		E3B2B421228C8470007326FE /* DragonsApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonsApi.swift; sourceTree = "<group>"; };
+		E3B2B423228C8778007326FE /* Dragon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dragon.swift; sourceTree = "<group>"; };
+		E3B2B425228CB6B2007326FE /* DragonsListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonsListCell.swift; sourceTree = "<group>"; };
+		E3B2B428228CB974007326FE /* Nunito-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Bold.ttf"; sourceTree = "<group>"; };
+		E3B2B429228CB974007326FE /* Nunito-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Regular.ttf"; sourceTree = "<group>"; };
+		E3B2B42C228CBE77007326FE /* DragonsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonsDetailView.swift; sourceTree = "<group>"; };
+		E3B2B42E228CBED6007326FE /* DragonsDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonsDetailRouter.swift; sourceTree = "<group>"; };
+		E3B2B430228CC033007326FE /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		E3B2B432228CC092007326FE /* UINavigationControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationControllerExtension.swift; sourceTree = "<group>"; };
+		E3B2B434228CC34C007326FE /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
+		E3B2B436228CCD71007326FE /* DragonsDetailProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonsDetailProtocols.swift; sourceTree = "<group>"; };
+		E3B2B438228CCE59007326FE /* DragonsDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonsDetailPresenter.swift; sourceTree = "<group>"; };
+		E3B2B43C228CD295007326FE /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		E3B2B43F228CDCC8007326FE /* DragonsTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DragonsTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		E3B2B440228CDCC8007326FE /* AppRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouterTests.swift; sourceTree = "<group>"; };
+		E3B2B444228CDD68007326FE /* UIColorExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensionTests.swift; sourceTree = "<group>"; };
+		E3B2B446228CDE3D007326FE /* StringExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensionTests.swift; sourceTree = "<group>"; };
+		E3B2B448228CE32F007326FE /* UIFontExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontExtensionTests.swift; sourceTree = "<group>"; };
+		E3B2B44B228CE38D007326FE /* UrlsApiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlsApiTests.swift; sourceTree = "<group>"; };
+		E3B2B44F228CE5AB007326FE /* DragonsDetailPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonsDetailPresenterTests.swift; sourceTree = "<group>"; };
+		E3B2B451228CE5B5007326FE /* DragonsDetailRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonsDetailRouterTests.swift; sourceTree = "<group>"; };
+		E3B2B456228CE64A007326FE /* DragonsDetailRouterMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonsDetailRouterMock.swift; sourceTree = "<group>"; };
+		E3B2B458228CE657007326FE /* DragonsDetailPresenterMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonsDetailPresenterMock.swift; sourceTree = "<group>"; };
+		E3B2B45B228CEA59007326FE /* DragonsListViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonsListViewTests.swift; sourceTree = "<group>"; };
+		E3B2B45D228CEA65007326FE /* DragonsListServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonsListServiceTests.swift; sourceTree = "<group>"; };
+		E3B2B45F228CEA71007326FE /* DragonsListRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonsListRouterTests.swift; sourceTree = "<group>"; };
+		E3B2B461228CEABB007326FE /* DragonsListPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonsListPresenterTests.swift; sourceTree = "<group>"; };
+		E3B2B464228CEAEC007326FE /* DragonsListViewMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonsListViewMock.swift; sourceTree = "<group>"; };
+		E3B2B466228CEAF8007326FE /* DragonsListServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonsListServiceMock.swift; sourceTree = "<group>"; };
+		E3B2B468228CEB03007326FE /* DragonsListRouterMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonsListRouterMock.swift; sourceTree = "<group>"; };
+		E3B2B46A228CEB10007326FE /* DragonsListPresenterMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonsListPresenterMock.swift; sourceTree = "<group>"; };
+		E3B2B46C228CEF38007326FE /* DragonsListRequestMock.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DragonsListRequestMock.json; sourceTree = "<group>"; };
+		E3B2B46F228CF2A8007326FE /* DragonsListNetworkMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonsListNetworkMock.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E3B2B3BB228BB4E5007326FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3B2B3ED228BB7B2007326FE /* Alamofire.framework in Frameworks */,
+				E3B2B3F3228BB7D3007326FE /* Kingfisher.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3B2B3CF228BB4E6007326FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3B2B3F4228BB7D6007326FE /* Quick.framework in Frameworks */,
+				E3B2B3F2228BB7BF007326FE /* Nimble.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E3B2B3B5228BB4E5007326FE = {
+			isa = PBXGroup;
+			children = (
+				E3B2B3C0228BB4E5007326FE /* Dragons */,
+				E3B2B3D5228BB4E6007326FE /* DragonsTests */,
+				E3B2B3BF228BB4E5007326FE /* Products */,
+				E3B2B3E8228BB7B2007326FE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E3B2B3BF228BB4E5007326FE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E3B2B3BE228BB4E5007326FE /* Dragons.app */,
+				E3B2B3D2228BB4E6007326FE /* DragonsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E3B2B3C0228BB4E5007326FE /* Dragons */ = {
+			isa = PBXGroup;
+			children = (
+				E3B2B3E3228BB565007326FE /* App */,
+				E3B2B3E4228BB56C007326FE /* Common */,
+				E3B2B3E5228BB572007326FE /* Modules */,
+				E3B2B3E6228BB579007326FE /* Resources */,
+				E3B2B3E2228BB555007326FE /* SupportFiles */,
+			);
+			path = Dragons;
+			sourceTree = "<group>";
+		};
+		E3B2B3D5228BB4E6007326FE /* DragonsTests */ = {
+			isa = PBXGroup;
+			children = (
+				E3B2B43E228CDCBC007326FE /* App */,
+				E3B2B442228CDD2A007326FE /* Common */,
+				E3B2B44D228CE58F007326FE /* Modules */,
+				E3B2B3E1228BB54B007326FE /* SupportFiles */,
+			);
+			path = DragonsTests;
+			sourceTree = "<group>";
+		};
+		E3B2B3E1228BB54B007326FE /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				E3B2B43F228CDCC8007326FE /* DragonsTests-Bridging-Header.h */,
+				E3B2B3D8228BB4E6007326FE /* Info.plist */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		E3B2B3E2228BB555007326FE /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				E3B2B3CD228BB4E6007326FE /* Info.plist */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		E3B2B3E3228BB565007326FE /* App */ = {
+			isa = PBXGroup;
+			children = (
+				E3B2B3C1228BB4E5007326FE /* AppDelegate.swift */,
+				E3B2B3FF228BBABE007326FE /* AppRouter.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		E3B2B3E4228BB56C007326FE /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				E3B2B43A228CD25C007326FE /* Components */,
+				E3B2B410228C78F4007326FE /* Extensions */,
+				E3B2B401228C759A007326FE /* Libraries */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		E3B2B3E5228BB572007326FE /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				E3B2B3F6228BB9D0007326FE /* DragonsDetail */,
+				E3B2B3F5228BB9C5007326FE /* DragonsList */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		E3B2B3E6228BB579007326FE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E3B2B3C8228BB4E6007326FE /* Assets.xcassets */,
+				E3B2B427228CB966007326FE /* Fonts */,
+				E3B2B3CA228BB4E6007326FE /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E3B2B3E8228BB7B2007326FE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E3B2B3E9228BB7B2007326FE /* Alamofire.framework */,
+				E3B2B3EA228BB7B2007326FE /* Kingfisher.framework */,
+				E3B2B3EC228BB7B2007326FE /* Nimble.framework */,
+				E3B2B3EB228BB7B2007326FE /* Quick.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E3B2B3F5228BB9C5007326FE /* DragonsList */ = {
+			isa = PBXGroup;
+			children = (
+				E3B2B41B228C8427007326FE /* Model */,
+				E3B2B425228CB6B2007326FE /* DragonsListCell.swift */,
+				E3B2B3F9228BBA61007326FE /* DragonsListPresenter.swift */,
+				E3B2B419228C7AEE007326FE /* DragonsListProtocols.swift */,
+				E3B2B3FD228BBA84007326FE /* DragonsListRouter.swift */,
+				E3B2B3FB228BBA78007326FE /* DragonsListService.swift */,
+				E3B2B3F7228BBA4E007326FE /* DragonsListView.swift */,
+			);
+			path = DragonsList;
+			sourceTree = "<group>";
+		};
+		E3B2B3F6228BB9D0007326FE /* DragonsDetail */ = {
+			isa = PBXGroup;
+			children = (
+				E3B2B438228CCE59007326FE /* DragonsDetailPresenter.swift */,
+				E3B2B436228CCD71007326FE /* DragonsDetailProtocols.swift */,
+				E3B2B42E228CBED6007326FE /* DragonsDetailRouter.swift */,
+				E3B2B42C228CBE77007326FE /* DragonsDetailView.swift */,
+			);
+			path = DragonsDetail;
+			sourceTree = "<group>";
+		};
+		E3B2B401228C759A007326FE /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				E3B2B402228C75A2007326FE /* Network */,
+				E3B2B408228C75D5007326FE /* UrlsApi */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		E3B2B402228C75A2007326FE /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				E3B2B403228C75AD007326FE /* Network.swift */,
+				E3B2B406228C75C3007326FE /* NetworkProtocol.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		E3B2B408228C75D5007326FE /* UrlsApi */ = {
+			isa = PBXGroup;
+			children = (
+				E3B2B409228C75E5007326FE /* UrlsApi.swift */,
+				E3B2B40B228C75F4007326FE /* UrlsApiProtocol.swift */,
+			);
+			path = UrlsApi;
+			sourceTree = "<group>";
+		};
+		E3B2B410228C78F4007326FE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E3B2B413228C7971007326FE /* StringExtension.swift */,
+				E3B2B411228C7935007326FE /* UIColorExtension.swift */,
+				E3B2B415228C7989007326FE /* UIFontExtension.swift */,
+				E3B2B434228CC34C007326FE /* UIImageExtension.swift */,
+				E3B2B432228CC092007326FE /* UINavigationControllerExtension.swift */,
+				E3B2B430228CC033007326FE /* UIViewControllerExtension.swift */,
+				E3B2B417228C79B8007326FE /* UIViewExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E3B2B41B228C8427007326FE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E3B2B41D228C8441007326FE /* Api */,
+				E3B2B41E228C8446007326FE /* Presentation */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E3B2B41D228C8441007326FE /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				E3B2B41F228C845E007326FE /* DragonsResponseApi.swift */,
+				E3B2B421228C8470007326FE /* DragonsApi.swift */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		E3B2B41E228C8446007326FE /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				E3B2B423228C8778007326FE /* Dragon.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		E3B2B427228CB966007326FE /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				E3B2B428228CB974007326FE /* Nunito-Bold.ttf */,
+				E3B2B429228CB974007326FE /* Nunito-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		E3B2B43A228CD25C007326FE /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				E3B2B43B228CD28B007326FE /* ErrorView */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		E3B2B43B228CD28B007326FE /* ErrorView */ = {
+			isa = PBXGroup;
+			children = (
+				E3B2B43C228CD295007326FE /* ErrorView.swift */,
+			);
+			path = ErrorView;
+			sourceTree = "<group>";
+		};
+		E3B2B43E228CDCBC007326FE /* App */ = {
+			isa = PBXGroup;
+			children = (
+				E3B2B440228CDCC8007326FE /* AppRouterTests.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		E3B2B442228CDD2A007326FE /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				E3B2B443228CDD3C007326FE /* Extensions */,
+				E3B2B44A228CE37C007326FE /* Libraries */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		E3B2B443228CDD3C007326FE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E3B2B446228CDE3D007326FE /* StringExtensionTests.swift */,
+				E3B2B444228CDD68007326FE /* UIColorExtensionTests.swift */,
+				E3B2B448228CE32F007326FE /* UIFontExtensionTests.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E3B2B44A228CE37C007326FE /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				E3B2B44B228CE38D007326FE /* UrlsApiTests.swift */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		E3B2B44D228CE58F007326FE /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				E3B2B44E228CE59C007326FE /* DragonsDetail */,
+				E3B2B45A228CEA43007326FE /* DragonsList */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		E3B2B44E228CE59C007326FE /* DragonsDetail */ = {
+			isa = PBXGroup;
+			children = (
+				E3B2B453228CE623007326FE /* Mock */,
+				E3B2B44F228CE5AB007326FE /* DragonsDetailPresenterTests.swift */,
+				E3B2B451228CE5B5007326FE /* DragonsDetailRouterTests.swift */,
+			);
+			path = DragonsDetail;
+			sourceTree = "<group>";
+		};
+		E3B2B453228CE623007326FE /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				E3B2B458228CE657007326FE /* DragonsDetailPresenterMock.swift */,
+				E3B2B456228CE64A007326FE /* DragonsDetailRouterMock.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		E3B2B45A228CEA43007326FE /* DragonsList */ = {
+			isa = PBXGroup;
+			children = (
+				E3B2B463228CEAC2007326FE /* Mock */,
+				E3B2B461228CEABB007326FE /* DragonsListPresenterTests.swift */,
+				E3B2B45F228CEA71007326FE /* DragonsListRouterTests.swift */,
+				E3B2B45D228CEA65007326FE /* DragonsListServiceTests.swift */,
+				E3B2B45B228CEA59007326FE /* DragonsListViewTests.swift */,
+			);
+			path = DragonsList;
+			sourceTree = "<group>";
+		};
+		E3B2B463228CEAC2007326FE /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				E3B2B46F228CF2A8007326FE /* DragonsListNetworkMock.swift */,
+				E3B2B46A228CEB10007326FE /* DragonsListPresenterMock.swift */,
+				E3B2B468228CEB03007326FE /* DragonsListRouterMock.swift */,
+				E3B2B466228CEAF8007326FE /* DragonsListServiceMock.swift */,
+				E3B2B464228CEAEC007326FE /* DragonsListViewMock.swift */,
+				E3B2B46C228CEF38007326FE /* DragonsListRequestMock.json */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E3B2B3BD228BB4E5007326FE /* Dragons */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E3B2B3DB228BB4E6007326FE /* Build configuration list for PBXNativeTarget "Dragons" */;
+			buildPhases = (
+				E3B2B3BA228BB4E5007326FE /* Sources */,
+				E3B2B3BB228BB4E5007326FE /* Frameworks */,
+				E3B2B3BC228BB4E5007326FE /* Resources */,
+				E3B2B40E228C76AE007326FE /* SwiftLint */,
+				E3B2B40F228C76C3007326FE /* Carthage */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Dragons;
+			productName = Dragons;
+			productReference = E3B2B3BE228BB4E5007326FE /* Dragons.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E3B2B3D1228BB4E6007326FE /* DragonsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E3B2B3DE228BB4E6007326FE /* Build configuration list for PBXNativeTarget "DragonsTests" */;
+			buildPhases = (
+				E3B2B3CE228BB4E6007326FE /* Sources */,
+				E3B2B3CF228BB4E6007326FE /* Frameworks */,
+				E3B2B3D0228BB4E6007326FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E3B2B3D4228BB4E6007326FE /* PBXTargetDependency */,
+			);
+			name = DragonsTests;
+			productName = DragonsTests;
+			productReference = E3B2B3D2228BB4E6007326FE /* DragonsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E3B2B3B6228BB4E5007326FE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Juliano Terres";
+				TargetAttributes = {
+					E3B2B3BD228BB4E5007326FE = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					E3B2B3D1228BB4E6007326FE = {
+						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
+						TestTargetID = E3B2B3BD228BB4E5007326FE;
+					};
+				};
+			};
+			buildConfigurationList = E3B2B3B9228BB4E5007326FE /* Build configuration list for PBXProject "Dragons" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E3B2B3B5228BB4E5007326FE;
+			productRefGroup = E3B2B3BF228BB4E5007326FE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E3B2B3BD228BB4E5007326FE /* Dragons */,
+				E3B2B3D1228BB4E6007326FE /* DragonsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E3B2B3BC228BB4E5007326FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3B2B3CC228BB4E6007326FE /* LaunchScreen.storyboard in Resources */,
+				E3B2B42A228CB974007326FE /* Nunito-Bold.ttf in Resources */,
+				E3B2B42B228CB974007326FE /* Nunito-Regular.ttf in Resources */,
+				E3B2B3C9228BB4E6007326FE /* Assets.xcassets in Resources */,
+				E3B2B46E228CEFB0007326FE /* DragonsListRequestMock.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3B2B3D0228BB4E6007326FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3B2B46D228CEF38007326FE /* DragonsListRequestMock.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E3B2B40E228C76AE007326FE /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		E3B2B40F228C76C3007326FE /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Kingfisher.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Nimble.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Quick.framework",
+			);
+			name = Carthage;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E3B2B3BA228BB4E5007326FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3B2B3C2228BB4E5007326FE /* AppDelegate.swift in Sources */,
+				E3B2B3FA228BBA61007326FE /* DragonsListPresenter.swift in Sources */,
+				E3B2B400228BBABE007326FE /* AppRouter.swift in Sources */,
+				E3B2B40A228C75E5007326FE /* UrlsApi.swift in Sources */,
+				E3B2B422228C8470007326FE /* DragonsApi.swift in Sources */,
+				E3B2B418228C79B8007326FE /* UIViewExtension.swift in Sources */,
+				E3B2B424228C8778007326FE /* Dragon.swift in Sources */,
+				E3B2B43D228CD295007326FE /* ErrorView.swift in Sources */,
+				E3B2B439228CCE59007326FE /* DragonsDetailPresenter.swift in Sources */,
+				E3B2B41A228C7AEE007326FE /* DragonsListProtocols.swift in Sources */,
+				E3B2B3FE228BBA84007326FE /* DragonsListRouter.swift in Sources */,
+				E3B2B426228CB6B2007326FE /* DragonsListCell.swift in Sources */,
+				E3B2B433228CC092007326FE /* UINavigationControllerExtension.swift in Sources */,
+				E3B2B407228C75C3007326FE /* NetworkProtocol.swift in Sources */,
+				E3B2B3FC228BBA78007326FE /* DragonsListService.swift in Sources */,
+				E3B2B404228C75AD007326FE /* Network.swift in Sources */,
+				E3B2B420228C845E007326FE /* DragonsResponseApi.swift in Sources */,
+				E3B2B437228CCD71007326FE /* DragonsDetailProtocols.swift in Sources */,
+				E3B2B42D228CBE77007326FE /* DragonsDetailView.swift in Sources */,
+				E3B2B42F228CBED6007326FE /* DragonsDetailRouter.swift in Sources */,
+				E3B2B414228C7971007326FE /* StringExtension.swift in Sources */,
+				E3B2B412228C7935007326FE /* UIColorExtension.swift in Sources */,
+				E3B2B40C228C75F4007326FE /* UrlsApiProtocol.swift in Sources */,
+				E3B2B3F8228BBA4E007326FE /* DragonsListView.swift in Sources */,
+				E3B2B431228CC033007326FE /* UIViewControllerExtension.swift in Sources */,
+				E3B2B416228C7989007326FE /* UIFontExtension.swift in Sources */,
+				E3B2B435228CC34C007326FE /* UIImageExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3B2B3CE228BB4E6007326FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3B2B467228CEAF8007326FE /* DragonsListServiceMock.swift in Sources */,
+				E3B2B462228CEABB007326FE /* DragonsListPresenterTests.swift in Sources */,
+				E3B2B441228CDCC8007326FE /* AppRouterTests.swift in Sources */,
+				E3B2B470228CF2A8007326FE /* DragonsListNetworkMock.swift in Sources */,
+				E3B2B460228CEA71007326FE /* DragonsListRouterTests.swift in Sources */,
+				E3B2B445228CDD68007326FE /* UIColorExtensionTests.swift in Sources */,
+				E3B2B45E228CEA65007326FE /* DragonsListServiceTests.swift in Sources */,
+				E3B2B459228CE657007326FE /* DragonsDetailPresenterMock.swift in Sources */,
+				E3B2B449228CE32F007326FE /* UIFontExtensionTests.swift in Sources */,
+				E3B2B447228CDE3D007326FE /* StringExtensionTests.swift in Sources */,
+				E3B2B45C228CEA59007326FE /* DragonsListViewTests.swift in Sources */,
+				E3B2B465228CEAEC007326FE /* DragonsListViewMock.swift in Sources */,
+				E3B2B469228CEB03007326FE /* DragonsListRouterMock.swift in Sources */,
+				E3B2B457228CE64A007326FE /* DragonsDetailRouterMock.swift in Sources */,
+				E3B2B452228CE5B5007326FE /* DragonsDetailRouterTests.swift in Sources */,
+				E3B2B46B228CEB10007326FE /* DragonsListPresenterMock.swift in Sources */,
+				E3B2B450228CE5AB007326FE /* DragonsDetailPresenterTests.swift in Sources */,
+				E3B2B44C228CE38D007326FE /* UrlsApiTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E3B2B3D4228BB4E6007326FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E3B2B3BD228BB4E5007326FE /* Dragons */;
+			targetProxy = E3B2B3D3228BB4E6007326FE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E3B2B3CA228BB4E6007326FE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E3B2B3CB228BB4E6007326FE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E3B2B3D9228BB4E6007326FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E3B2B3DA228BB4E6007326FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E3B2B3DC228BB4E6007326FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XPQRN7QUXG;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = Dragons/SupportFiles/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.affine.Dragons;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		E3B2B3DD228BB4E6007326FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XPQRN7QUXG;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = Dragons/SupportFiles/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.affine.Dragons;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		E3B2B3DF228BB4E6007326FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XPQRN7QUXG;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = DragonsTests/SupportFiles/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.julianoterres.DragonsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DragonsTests/SupportFiles/DragonsTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dragons.app/Dragons";
+			};
+			name = Debug;
+		};
+		E3B2B3E0228BB4E6007326FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XPQRN7QUXG;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = DragonsTests/SupportFiles/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.julianoterres.DragonsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DragonsTests/SupportFiles/DragonsTests-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dragons.app/Dragons";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E3B2B3B9228BB4E5007326FE /* Build configuration list for PBXProject "Dragons" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3B2B3D9228BB4E6007326FE /* Debug */,
+				E3B2B3DA228BB4E6007326FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E3B2B3DB228BB4E6007326FE /* Build configuration list for PBXNativeTarget "Dragons" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3B2B3DC228BB4E6007326FE /* Debug */,
+				E3B2B3DD228BB4E6007326FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E3B2B3DE228BB4E6007326FE /* Build configuration list for PBXNativeTarget "DragonsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3B2B3DF228BB4E6007326FE /* Debug */,
+				E3B2B3E0228BB4E6007326FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E3B2B3B6228BB4E5007326FE /* Project object */;
+}
